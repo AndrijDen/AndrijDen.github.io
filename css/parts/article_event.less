@@ -1,0 +1,163 @@
+.aE {
+	display: grid;
+	grid-template-columns: 110px auto;
+	&__img {
+		img {
+			width: 100px;
+		}
+	}
+	&__data {
+		&--day {
+			margin-left: 10px;
+			line-height: 1.6em;
+			float: right;
+		}
+		&--title {
+			margin-bottom: 5px;
+			line-height: 1.6em;
+			letter-spacing: 1.5px;
+			a {
+				color: #000;
+				text-decoration: none;
+			}
+		}
+		&--description {
+			display: block;
+			line-height: 2em;
+			letter-spacing: 0.9px;
+		}
+		&--button {
+			margin-top: 10px;
+		}
+	}
+	&__date {
+		display: none;
+		line-height: 2em;
+		letter-spacing: 0.9px;
+	}
+}
+
+@media @mobileLarge {
+	.aE {
+		&__data {
+			&--day {
+				margin-left: 15px;
+			}
+		}
+	}
+}
+@media @tablet {
+	.aE {
+		grid-template-columns: 130px auto;
+		&__img {
+			img {
+				width: 120px;
+			}
+		}
+		&__data {
+			&--button {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+@media @tabletMiddle {
+	.aE {
+		grid-template-columns: 165px auto 145px;
+		&__img {
+			img {
+				width: 150px;
+			}
+		}
+		&__data {
+			&--day {
+				display: none;
+			}
+			&--button {
+				display: none;
+			}
+		}
+		&__date {
+			padding: 5px;
+			display: grid;
+			grid-template-rows: 30px 30px auto;
+			color: #fff;
+			background-color: #033f65;
+			&--day,
+			&--time {
+				margin-left: 15px;
+			}
+			&--adress {
+				display: none;
+			}
+			&--button {
+				align-self: center;
+				justify-self: center;
+				border: 2px solid #fff;
+			}
+		}
+	}
+}
+@media @tabletLarge {
+	.aE {
+		grid-template-columns: 210px auto 160px;
+		&__img {
+			img {
+				width: 190px;
+			}
+		}
+		&__data {
+			&--title {
+				margin: 10px 0 10px 0;
+			}
+		}
+		&__date {
+			grid-template-rows: 30px 30px 50px auto;
+			&--adress {
+				margin-left: 15px;
+				line-height: 1.5em;
+				display: block;
+			}
+		}
+	}
+}
+@media @desktop {
+	.aE {
+		margin-bottom: 50px;
+		grid-template-columns: 240px auto 200px;
+		&__img {
+			img {
+				width: 230px;
+			}
+		}
+		&__data {
+			&--title {
+				margin: 10px 0 15px 0;
+			}
+		}
+		&__date {
+			grid-template-rows: 35px 35px 55px auto;
+		}
+	}
+}
+@media @desktopMiddle {
+	.aE {
+		margin-bottom: 60px;
+		grid-template-columns: 320px auto 235px;
+		&__img {
+			img {
+				width: 290px;
+			}
+		}
+		&__data {
+			&--title {
+				margin: 20px 0 25px 0;
+			}
+		}
+		&__date {
+			padding: 10px;
+			grid-template-rows: 40px 40px 60px auto;
+		}
+	}
+}
+@media @desktopLarge {}

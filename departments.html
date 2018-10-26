@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FI - Departments</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="64x64" href="/images/icons/favicon-64x64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <!--Android Chrome-->
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-chrome-192x192.png">
+    <meta name="theme-color" content="#306A90">
+    <!--Apple/Safari icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+    <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#022a44">
+    <!--Windows tiles-->
+    <meta name="msapplication-TileColor" content="#022a44">
+    <meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+    <!--Facebook metadata-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Факультет Інформатики">
+    <meta property="og:url" content="http://fin.ukma.edu.ua/">
+    <meta property="og:image" content="http://fi/image/icons/og-image.jpg">
+    <meta property="og:image:width" content="269">
+    <meta property="og:image:height" content="269">
+    <meta property="og:description" content="Національний Університет &laquo;Києво-Могилянська Академія&raquo;">
+    <!--jQuery-->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous">
+    </script>
+    <!--SigmaJS-->
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js">
+    </script>
+    <!--fonts-->
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <!--custom imports-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/departments.css">
+    <link rel="stylesheet" href="css/education.css">
+    <script src="js/departments.js"></script>
+</head>
+<body>
+<div id="root" class="root">
+    <!--header-->
+    <header class="header" id="headerContainer">
+        <div class="header__menu" id="headerMenuContainer">
+            <input class="header__toggle" type="checkbox" id="navToggle">
+            <a class="header__logo" href="#">
+                <img class="header__logo__img" src="images/fi_logo.svg" alt="logo">
+            </a>
+            <label for="navToggle" class="header__toggle--button">
+                <i class="fas burger tC_fff"></i>
+            </label>
+            <nav class="header__nav">
+                <a class="header__nav__link" href="index.html">Головна</a>
+                <a class="header__nav__link" href="news.html">Новини</a>
+                <a class="header__nav__link active" href="departments.html">Кафедри</a>
+                <a class="header__nav__link" href="education.html">Навчання</a>
+                <a class="header__nav__link" href="activities.html">Діяльність</a>
+                <a class="header__nav__link" href="about.html">Про нас</a>
+            </nav>
+        </div>
+        <div class="header__title tC_fff" id="headerTitleContainer">
+            <div class="header__title__text">
+                <div class="header__title__text--main">
+                    <span>Факультет</span>
+                    <span class="small">Інформатики</span>
+                </div>
+                <div class="header__title__text--second">
+                    <span>Національного Університету</span>
+                    <span>«Києво-Могилянська Академія»</span>
+                </div>
+            </div>
+        </div>
+        <div class="header__graph" id="graphContainer"></div>
+    </header>
+    <main class="main departmentsPage">
+        <aside class="aside">
+            <h1 class="aside__header tC_34 tC_2c4059">Кафедри</h1>
+            <div class="aside__body">
+                <ul class="aside__list tC_20">
+                    <li class="aside__item">Мультимедійні системи</li>
+                    <li class="aside__item">Інформатика</li>
+                    <li class="aside__item">Математика</li>
+                    <li class="aside__item">Мережеві технології</li>
+                </ul>
+            </div>
+        </aside>
+        <section class="section">
+            <section class="section__row">
+                <h1 class="section__header tC_34 tC_2c4059">Кафедра мультимедійних систем</h1>
+                <section class="section__body">
+                    <input id="subTab1_1" class="section__nav--radio" type="radio" name="dep_1" checked="checked"/>
+                    <input id="subTab1_2" class="section__nav--radio" type="radio" name="dep_1"/>
+                    <nav class="section__nav">
+                        <ul class="section__nav--list tC_28 tC_2c4059">
+                            <li class="section__nav--item t">
+                                <label for="subTab1_1" class="section__nav--label">Викладачі</label>
+                            </li>
+                            <li class="divider">|</li>
+                            <li class="section__nav--item c">
+                                <label for="subTab1_2" class="section__nav--label">Анотації курсів</label>
+                            </li>
+                        </ul>
+                    </nav>
+                    <section class="section__tab t">
+                        <article class="section__tab--item aT">
+                            <div class="aT__img">
+                                <img src="images/teachers/teacher1.jpg" alt="teachers photo">
+                            </div>
+                            <div class="aT__data tC_20">
+                                <div class="aT__data--position tC_24">Завідувач</div>
+                                <div class="aT__data--name">Володимир Васильович Бублик</div>
+                                <div class="aT__data--degree">кандидат фізико-математичних наук, доцент</div>
+                                <div class="aT__data--place">корпус 1, кімната 204</div>
+                                <div class="aT__data--phone">(044) 425 77 53</div>
+                                <div class="aT__data--email">
+                                    <a class="link tC_022a44" href="mailto:boublik@ukma.edu.ua">
+                                        boublik@ukma.edu.ua
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="section__tab--item aT">
+                            <div class="aT__img">
+                                <img src="images/teachers/teacher1.jpg" alt="teachers photo">
+                            </div>
+                            <div class="aT__data tC_20">
+                                <div class="aT__data--position tC_24">Завідувач</div>
+                                <div class="aT__data--name">Володимир Васильович Бублик</div>
+                                <div class="aT__data--phone">(044) 425 77 53</div>
+                                <div class="aT__data--email">
+                                    <a class="link tC_022a44" href="mailto:boublik@ukma.edu.ua">
+                                        boublik@ukma.edu.ua
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="section__tab--item aT">
+                            <div class="aT__img">
+                                <img src="images/teachers/teacher1.jpg" alt="teachers photo">
+                            </div>
+                            <div class="aT__data tC_20">
+                                <div class="aT__data--position tC_24">Завідувач</div>
+                                <div class="aT__data--name">Володимир Васильович Бублик</div>
+                                <div class="aT__data--degree">кандидат фізико-математичних наук, доцент</div>
+                                <div class="aT__data--place">корпус 1, кімната 204</div>
+                                <div class="aT__data--phone">(044) 425 77 53</div>
+                                <div class="aT__data--email">
+                                    <a class="link tC_022a44" href="mailto:boublik@ukma.edu.ua">
+                                        boublik@ukma.edu.ua
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="section__tab--item aT">
+                            <div class="aT__img">
+                                <img src="images/teachers/teacher1.jpg" alt="teachers photo">
+                            </div>
+                            <div class="aT__data tC_20">
+                                <div class="aT__data--position tC_24">Завідувач</div>
+                                <div class="aT__data--name">Володимир Васильович Бублик</div>
+                                <div class="aT__data--phone">(044) 425 77 53</div>
+                                <div class="aT__data--email">
+                                    <a class="link tC_022a44" href="mailto:boublik@ukma.edu.ua">
+                                        boublik@ukma.edu.ua
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="section__tab--item aT">
+                            <div class="aT__img">
+                                <img src="images/teachers/teacher1.jpg" alt="teachers photo">
+                            </div>
+                            <div class="aT__data tC_20">
+                                <div class="aT__data--position tC_24">Завідувач</div>
+                                <div class="aT__data--name">Володимир Васильович Бублик</div>
+                                <div class="aT__data--degree">кандидат фізико-математичних наук, доцент</div>
+                                <div class="aT__data--place">корпус 1, кімната 204</div>
+                                <div class="aT__data--phone">(044) 425 77 53</div>
+                                <div class="aT__data--email">
+                                    <a class="link tC_022a44" href="mailto:boublik@ukma.edu.ua">
+                                        boublik@ukma.edu.ua
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="section__tab--item aT">
+                            <div class="aT__img">
+                                <img src="images/teachers/teacher1.jpg" alt="teachers photo">
+                            </div>
+                            <div class="aT__data tC_20">
+                                <div class="aT__data--position tC_24">Завідувач</div>
+                                <div class="aT__data--name">Володимир Васильович Бублик</div>
+                                <div class="aT__data--phone">(044) 425 77 53</div>
+                                <div class="aT__data--email">
+                                    <a class="link tC_022a44" href="mailto:boublik@ukma.edu.ua">
+                                        boublik@ukma.edu.ua
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="section__tab c">
+                        <article class="section__tab--item aC">
+                            <h2 class="aC__title tC_30">Ієрархічне програмування</h2>
+                            <div class="aC__description tC_20">
+                                Концепції сучасного програмування в рамках парадигм процедурно-орієнтованого
+                                програмування, абстрактних типів даних (об'єктне програмування) і ієрархічного
+                                програмування у їх розвитку і взаємозв'язку. Основу вивчення складають поняття типу,
+                                функції, в тому числі узагальненої , об'єкта і класу, в тому числі параметризованого.
+                                Проблеми розширення областей визначення функцій, специфікації класів, побудови ієрархії
+                                об'єктів і класів, зокрема поліморфізму, успадкування інтерфейсу і реалізації.
+                            </div>
+                        </article>
+                        <article class="section__tab--item aC">
+                            <h2 class="aC__title tC_30">Веб-орієнтовані системи</h2>
+                            <div class="aC__description tC_20">
+                                Організація веб-орієнтованих інформаційних систем на основі клієнт-серверної
+                                архітектури. Мова серверних сценаріїв PHP. Шаблонізатор Smarty. Програмування на стороні
+                                клієнта: HTML, CSS, JavaScript, AJAX. Веб-застосування та бази даних (на прикладі
+                                MySQL). Виконання практичного проекту, спрямованого на побудову трирівневого
+                                веб-застосування.
+                            </div>
+                        </article>
+                        <article class="section__tab--item aC">
+                            <h2 class="aC__title tC_30">Основи інтернет бізнесу</h2>
+                            <div class="aC__description tC_20">
+                                Специфіка ведення бізнесу в Інтернеті. Власний веб-проект як основа Інтернеті-бізнесу.
+                                Типові бізнес-моделі в Інтернеті. Просування веб-проектів: пошукова оптимізація та
+                                реклама. Використання соціальних мереж для ведення Інтернет-бізнесу. Основи
+                                SMM-маркетингу. Технологічні, організаційні та правові аспекти Інтернет-бізнесу.
+                                Вивчення курсу передбачає виконання та захист практичного проекту.
+                            </div>
+                        </article>
+                        <article class="section__tab--item aC">
+                            <h2 class="aC__title tC_30">Обробка зображень</h2>
+                            <div class="aC__description tC_20">
+                                Забезпечення якісної підготовки фахівців в області цифрової обробки зображень і суміжних
+                                областях, а саме: видавнича та поліграфічна галузі, мультимедійні технології,
+                                Web-дизайн, тощо. Студенти здобувають основні знання та навички роботи з різними типами
+                                зображень, фотографією, а також основи дизайну і роботи зі шрифтами. Результатом праці
+                                студентів стане низка художніх, композиційних і дизайнерських розробок (плакатів,
+                                листівок тощо), створених за всіма технологічними нормами та вимогами.
+                            </div>
+                        </article>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <section class="section">
+        <section class="section__row">
+            <div class="pagination">
+                <a href="#" class="active pagination__numbers">1</a>
+                <a href="#" class="pagination__numbers">2</a>
+                <a href="#" class="pagination__numbers pagination__numbers--dots">...</a>
+                <a href="#" class="pagination__numbers">6</a>
+                <a href="#" class="pagination__numbers">7</a>
+            </div>
+        </section>
+    </section>
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer__nav">
+            <div class="footer__nav__main">
+                <a class="navLink link" href="index.html">Головна</a>
+                <a class="navLink link hide" href="departments.html">Кафедри</a>
+                <a class="navLink link hide" href="education.html">Навчання</a>
+                <a class="navLink link" href="news.html">Новини</a>
+                <a class="navLink link" href="activities.html">Діяльність</a>
+                <a class="navLink link" href="about.html">Про нас</a>
+            </div>
+            <div class="footer__nav__department">
+                <a class="navLink link" href="departments.html">Кафедри:</a>
+                <ul class="navList">
+                    <li>
+                        <a class="navList__link link" href="#">Кафедра мультимедійних систем</a>
+                    </li>
+                    <li>
+                        <a class="navList__link link" href="#">Кафедра інформатики</a>
+                    </li>
+                    <li>
+                        <a class="navList__link link" href="#">Кафедра математики</a>
+                    </li>
+                    <li>
+                        <a class="navList__link link" href="#">Кафедра мережних технологій</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__nav__education">
+                <a class="navLink link" href="education.html">Навчання:</a>
+                <ul class="navList">
+                    <li>
+                        <a class="navList__link link" href="#">Бакалаврат</a>
+                    </li>
+                    <li>
+                        <a class="navList__link link" href="#">Магістратура</a>
+                    </li>
+                    <li>
+                        <a class="navList__link link" href="#">Аспірантура</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__nav__contacts">
+                <div class="contact">
+                    <div class="contact__icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact__data">
+                        <a class="contact__link link" href="https://goo.gl/maps/waArFP91WSK2">
+                            <span>вул. Іллінська 9,&nbsp;</span>
+                            <span>2 поверх КМЦ, кім. 1</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact__icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact__data">
+                        <a class="contact__link link" href="tel:+380444256022">
+                            <span>(044) 425-60-22,</span>
+                        </a>
+                        <a class="contact__link link" href="tel:+380444255417">
+                            <span>(044) 425-54-17</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact__icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact__data">
+                        <a class="contact__link link" href="mailto:fin@ukma.kiev.ua">
+                            <span>fin@ukma.kiev.ua</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact hide">
+                    <div class="contact__icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="contact__data">
+                        <a class="contact__link link" href="https://www.facebook.com/fin.ukma/">
+                            <span>facebook.com/fin.ukma</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__nav__fb">
+                <div id="fb-root"></div>
+                <div
+                        id="footerFacebookPage"
+                        class="fb-page"
+                        data-href="https://www.facebook.com/fin.ukma"
+                        data-small-header="true"
+                        data-adapt-container-width="false"
+                        data-hide-cover="true"
+                        data-show-facepile="true"
+                        data-width="200"
+                        data-height="200">
+                    <blockquote cite="https://www.facebook.com/fin.ukma" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/fin.ukma">Факультет інформатики НаУКМА</a>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <span>Faculty of Informatics,&nbsp;</span>
+            <span>Kyiv-Mohyla Academy &nbsp;&copy; 2018</span>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

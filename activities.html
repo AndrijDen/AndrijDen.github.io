@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FI - Activities</title>
+	<!--Favicon-->
+	<link rel="icon" type="image/png" sizes="64x64" href="/images/icons/favicon-64x64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+	<!--Android Chrome-->
+	<link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-chrome-192x192.png">
+	<meta name="theme-color" content="#306A90">
+	<!--Apple/Safari icon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#022a44">
+  <!--Windows tiles-->
+	<meta name="msapplication-TileColor" content="#022a44">
+	<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+	<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+	<!--Facebook metadata-->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Факультет Інформатики">
+	<meta property="og:url" content="http://fin.ukma.edu.ua/">
+	<meta property="og:image" content="http://fi/image/icons/og-image.jpg">
+	<meta property="og:image:width" content="269">
+	<meta property="og:image:height" content="269">
+	<meta property="og:description" content="Національний Університет &laquo;Києво-Могилянська Академія&raquo;">
+	<!--jQuery-->
+	<script 
+		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous">
+	</script>
+	<!--SigmaJS-->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js">
+	</script>
+	<!--fonts-->
+	<link 
+		rel="stylesheet" 
+		href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
+		crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<!--custom imports-->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/activities.css">
+	<script src="js/activities.js"></script>
+</head>
+<body>
+	<div id="root" class="root">
+		<!--header-->
+		<header class="header" id="headerContainer">
+			<div class="header__menu" id="headerMenuContainer">
+				<input class="header__toggle" type="checkbox" id="navToggle">
+				<a class="header__logo" href="#">
+					<img class="header__logo__img" src="images/fi_logo.svg" alt="logo">
+				</a>
+				<label for="navToggle" class="header__toggle--button">
+		      <i class="fas burger tC_fff"></i>
+		    </label>
+				<nav class="header__nav">
+					<a class="header__nav__link" href="index.html">Головна</a>
+					<a class="header__nav__link" href="news.html">Новини</a>
+					<a class="header__nav__link" href="departments.html">Кафедри</a>
+					<a class="header__nav__link" href="education.html">Навчання</a>
+					<a class="header__nav__link active" href="activities.html">Діяльність</a>
+					<a class="header__nav__link" href="about.html">Про нас</a>
+				</nav>
+			</div>
+			<div class="header__title tC_fff" id="headerTitleContainer">
+				<div class="header__title__text">
+					<div class="header__title__text--main">
+						<span>Факультет</span>
+						<span class="small">Інформатики</span>
+					</div>
+					<div class="header__title__text--second">
+						<span>Національного Університету</span>
+						<span>«Києво-Могилянська Академія»</span>
+					</div>
+				</div>
+			</div>
+			<div class="header__graph" id="graphContainer"></div>
+		</header>
+		<main class="main activitiesPage">
+			<section class="section">
+				<section class="section__row">
+					<div class="section__body">
+						<input id="subTab_1" class="section__nav--radio" type="radio" name="activities" checked="checked" />
+						<input id="subTab_2" class="section__nav--radio" type="radio" name="activities" />
+						<nav class="section__nav">
+							<ul class="section__nav--list tC_34 tC_2c4059">
+								<li class="section__nav--item p">
+									<label for="subTab_1"  class="section__nav--label">Програми обміну</label>
+								</li>
+								<li class="divider">|</li>
+								<li class="section__nav--item i">
+									<label for="subTab_2"  class="section__nav--label">Стажування</label>
+								</li>
+							</ul>
+						</nav>
+						<section class="section__tab p" id="programsTab">
+							<article class="section__tab--item aXI">
+								<h2 class="aXI__title tC_30">Global Undergraduate Exchange Program) 2018-2019</h2>
+								<div class="aXI__deadline tC_22">Кінцевий термін подання анкет – 31 травня, 2017 р</div>
+								<div class="aXI__description tC_22">(Global UGRAD) – це  програма культурного обміну, яка здійснюється Бюро у справах освіти та культури Державного департаменту США та підтримується народом Сполучених Штатів Америки. Детальніше <a class="aXI__description--link" href="ua.usembassy.gov/uk/education-culture-uk/exchange-programs-uk/">ua.usembassy.gov/uk/education-culture-uk/exchange-programs-uk/</a></div>
+							</article>
+							<article class="section__tab--item aXI">
+								<h2 class="aXI__title tC_30">Global Undergraduate Exchange Program) 2018-2019</h2>
+								<div class="aXI__deadline tC_22">Кінцевий термін подання анкет – 31 травня, 2017 р</div>
+								<div class="aXI__description tC_22">(Global UGRAD) – це  програма культурного обміну, яка здійснюється Бюро у справах освіти та культури Державного департаменту США та підтримується народом Сполучених Штатів Америки. Детальніше <a class="aXI__description--link" href="ua.usembassy.gov/uk/education-culture-uk/exchange-programs-uk/">ua.usembassy.gov/uk/education-culture-uk/exchange-programs-uk/</a></div>
+							</article>
+						</section>
+						<section class="section__tab i" id="internshipsTab">
+							<article class="section__tab--item aXI">
+								<h2 class="aXI__title tC_30">Компанія MacPaw відкриває набір на інтернатуру 2019.</h2>
+								<div class="aXI__deadline tC_22">Спеціалізації: <br>Cocoa Development, QA, DevOps, Design, Email Marketing, PPC, Product Discovery, Customer Care.</div>
+								<div class="aXI__description tC_22">Для того щоб взяти участь, необхідно заповнити анкету на сайті: <br> <a class="aXI__description--link" href="https://macpaw.com/internship">https://macpaw.com/internship</a> і зробити тестове завдання. Кращих кандидатів буде запрошено на співбесіду за резуальтатами якої буде відібрано по 2 людини на кожен напрямок.</div>
+							</article>
+							<article class="section__tab--item aXI">
+								<h2 class="aXI__title tC_30">Стажування в офісі IBM Ukraine</h2>
+								<div class="aXI__deadline tC_22">Спеціалізації: <br>Cocoa Development, QA, DevOps, Design, Email Marketing, PPC, Product Discovery, Customer Care.</div>
+								<div class="aXI__description tC_22">Шановні студенти, маєте можливість поборотися за право пройти стажування в офісі IBM Ukraine (20 годин робочий тиждень без відриву від навчання). Інформацію щодо вакансій для інтернів знайдете тут <a class="aXI__description--link" href="https://krb-sjobs.brassring.com/…/Sea…/Home/HomeWithPreLoad…">https://krb-sjobs.brassring.com/…/Sea…/Home/HomeWithPreLoad…</a></div>
+							</article>
+						</section>
+					</div>
+					<section class="section">
+						<section class="section__row">
+							<div class="pagination">
+								<a href="#" class="active pagination__numbers">1</a>
+								<a href="#" class="pagination__numbers">2</a>
+								<a href="#" class="pagination__numbers pagination__numbers--dots">...</a>
+								<a href="#" class="pagination__numbers">6</a>
+								<a href="#" class="pagination__numbers">7</a>
+							</div>
+						</section>
+					</section>
+				</section>
+			</section>
+		</main>
+
+		<!--footer-->
+		<footer class="footer">
+			<div class="footer__nav">
+				<div class="footer__nav__main">
+					<a class="navLink link" href="index.html">Головна</a>
+					<a class="navLink link hide" href="departments.html">Кафедри</a>
+					<a class="navLink link hide" href="education.html">Навчання</a>
+					<a class="navLink link" href="news.html">Новини</a>
+					<a class="navLink link" href="activities.html">Діяльність</a>
+					<a class="navLink link" href="about.html">Про нас</a>
+				</div>
+				<div class="footer__nav__department">
+					<a class="navLink link" href="departments.html">Кафедри:</a>
+					<ul class="navList">
+						<li>
+							<a class="navList__link link" href="#">Кафедра мультимедійних систем</a>
+						</li>
+						<li>
+							<a class="navList__link link" href="#">Кафедра інформатики</a>
+						</li>
+						<li>
+							<a class="navList__link link" href="#">Кафедра математики</a>
+						</li>
+						<li>
+							<a class="navList__link link" href="#">Кафедра мережних технологій</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__nav__education">
+					<a class="navLink link" href="education.html">Навчання:</a>
+					<ul class="navList">
+						<li>
+							<a class="navList__link link" href="#">Бакалаврат</a>
+						</li>
+						<li>
+							<a class="navList__link link" href="#">Магістратура</a>
+						</li>
+						<li>
+							<a class="navList__link link" href="#">Аспірантура</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__nav__contacts">
+					<div class="contact">
+						<div class="contact__icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<div class="contact__data">
+							<a class="contact__link link" href="https://goo.gl/maps/waArFP91WSK2">
+								<span>вул. Іллінська 9,&nbsp;</span>
+								<span>2 поверх КМЦ, кім. 1</span>
+							</a>
+						</div>
+					</div>
+					<div class="contact">
+						<div class="contact__icon">
+							<i class="fas fa-phone"></i>
+						</div>
+						<div class="contact__data">
+							<a class="contact__link link" href="tel:+380444256022">
+								<span>(044) 425-60-22,</span>
+							</a>
+							<a class="contact__link link" href="tel:+380444255417">
+								<span>(044) 425-54-17</span>
+							</a>
+						</div>
+					</div>
+					<div class="contact">
+						<div class="contact__icon">
+							<i class="fas fa-envelope"></i>
+						</div>
+						<div class="contact__data">
+							<a class="contact__link link" href="mailto:fin@ukma.kiev.ua">
+								<span>fin@ukma.kiev.ua</span>
+							</a>
+						</div>
+					</div>
+					<div class="contact hide">
+						<div class="contact__icon">
+							<i class="fab fa-facebook-f"></i>
+						</div>
+						<div class="contact__data">
+							<a class="contact__link link" href="https://www.facebook.com/fin.ukma/">
+								<span>facebook.com/fin.ukma</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__nav__fb">
+					<div id="fb-root"></div>
+					<div 
+						id="footerFacebookPage"
+						class="fb-page" 
+						data-href="https://www.facebook.com/fin.ukma"
+						data-small-header="true" 
+						data-adapt-container-width="false" 
+						data-hide-cover="true" 
+						data-show-facepile="true" 
+						data-width="200"
+						data-height="200">
+						<blockquote cite="https://www.facebook.com/fin.ukma" class="fb-xfbml-parse-ignore">
+							<a href="https://www.facebook.com/fin.ukma">Факультет інформатики НаУКМА</a>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<span>Faculty of Informatics,&nbsp;</span>
+				<span>Kyiv-Mohyla Academy &nbsp;&copy; 2018</span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,726 @@
+@import "parts/base";
+@import "parts/components";
+@import "parts/article_news";
+
+.mainPage {
+	.section {
+		&__header {
+			text-transform: none;
+		}
+	}
+}
+.welcome {
+	&__carousel {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		overflow: hidden;
+		&--radios {
+			position: absolute;
+			bottom: 3px;
+			z-index: 6;
+			input {
+				display: none;
+				&:checked + .radioButton {
+					opacity: 1;
+				}
+			}
+			.radioButton {
+				margin: 0 4px;
+				height: 15px;
+				width: 15px;
+				display: inline-block;
+				background-color: #fff;
+				border-radius: 100%;
+				cursor: pointer;
+				opacity: 0.5;
+			}
+		}
+		.carousel {
+			&__slide {
+				.imageItem {
+					height: 200px;
+				}
+			}
+		}
+	}
+	&__description {
+		margin-top: 20px;
+		padding: 0 20px;
+		line-height: 1.8em;
+		&--link {
+			text-decoration: none;
+			color: #033f65;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	&__button {
+		margin-top: 25px;
+	}
+}
+.lastNews {
+	.section {
+		&__body {
+			padding: 0 10px;
+			position: relative;
+		}
+	}
+	&__linkMore {
+		position: absolute;
+		top: -25px;
+		right: 5px;
+		text-decoration: none;
+		color: #033f65;
+		line-height: 1.8em;
+		letter-spacing: 1px;
+		&:hover {
+			text-decoration: underline;
+		}
+		&:before {
+			content: "Більше ";
+		} 
+	}
+}
+.science {
+	background: url(../images/fi_cafedr_bg.png) no-repeat;
+	background-size: cover;
+	.section {
+		&__header {
+			letter-spacing: 0;
+		}
+		&__body {
+			padding-bottom: 20px;
+			max-width: 1280px;
+		}
+	}
+	&__list {
+		padding: 0 10px 0 30px;
+		list-style: disc;
+	}
+	&__item {
+		line-height: 2.4em;
+	}
+	&__button {
+		margin-top: 25px;
+	}
+}
+.education {
+	.section {
+		&__header {
+			letter-spacing: 0;
+		}
+		&__body {
+			padding-bottom: 0;
+		}
+	}
+	&__carousel {
+		padding-top: 30px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		overflow: hidden;
+		&--radios {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-around;
+			z-index: 6;
+			input {
+				display: none;
+				&:checked + .radioButton {
+					border-bottom: 2px solid #062b45;
+				}
+			}
+			.radioButton {
+				cursor: pointer;
+			}
+		}
+		.carousel {
+			&__slide {
+				margin: 0 10px;
+				display: grid;
+				grid-template-rows: 230px 30px auto 60px;
+				align-items: start;
+				justify-items: center;
+				cursor: default;
+			}
+		}
+	}
+	&__program {
+		padding-bottom: 20px;
+		&:nth-child(odd) {
+			background-color: #062b45;
+		}
+		&:nth-child(even) {
+			a {
+				color: #062b45;
+			}
+		}
+		&--title {
+			text-align: center;
+			line-height: 1.6em;
+			letter-spacing: 1.5px;
+		}
+		&--img {
+			width: 230px;
+		}
+		&--list {
+			padding: 0 10px 0 30px;
+			width: 300px;
+			line-height: 2.67em;
+			list-style: disc;
+		}
+		&--item {
+			&.title {
+				margin-left: -20px;
+				padding: 8px 0 7px 0;
+				text-align: center;
+				line-height: 1.6em;
+				list-style: none;
+			}
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+		&--button {
+			margin-top: 20px;
+			align-self: end;
+		}
+	}
+}
+.activities {
+	&.section__row {
+		margin-bottom: 0;
+	}
+	.section {
+		&__body {
+			padding-bottom: 0;
+			max-width: none;
+			position: relative;
+		}
+	}
+	&__background {
+		height: 0;
+		width: 60%;
+		display: none;
+		align-self: flex-end;
+  	border-left: 1em solid rgba(0, 0, 0, 0);
+	}
+	&__data {
+		padding-bottom: 30px;
+		width: 100%;
+		max-width: 1165px;
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	&__description {
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 100%;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		.tC_18 {
+			line-height: 1.4em;
+			letter-spacing: 0;
+		}
+		&--paragraph {
+			margin-bottom: 10px;
+		}
+	}
+	&__button {
+		margin-top: 10px;
+	}
+	&__companies {
+		display: none;
+	}
+}
+
+@media @mobileLarge {
+	.welcome {
+		&__carousel {
+			.carousel {
+				&__slide {
+					.imageItem {
+						height: 220px;
+					}
+				}
+			}
+		}
+		&__description {
+			margin-top: 30px;
+			padding: 0 30px;
+		}
+		&__button {
+			margin-top: 35px;
+		}
+	}
+	.lastNews {
+		.section {
+			&__body {
+				padding: 0 20px;
+			}
+		}
+		&__linkMore {
+			right: 20px;
+		}
+	}
+	.science {
+		&__list {
+			padding: 0 20px 0 40px;
+		}
+	}
+	.education {
+		&__carousel {
+			&--radios {
+				width: 80%;
+			}
+			.carousel {
+				&__slide {
+					margin: 0 40px;
+				}
+			}
+		}
+		&__program {
+			&--item {
+				&.title {
+					padding: 8px 0;
+				}
+			}
+		}
+	}
+	.activities {
+		&__description {
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+	}
+}
+@media @tablet {
+	.welcome {
+		&__description {
+			margin-top: 40px;
+		}
+		&__button {
+			margin-top: 45px;
+		}
+	}
+	.lastNews {
+		.section {
+			&__body {
+				padding: 0 30px;
+			}
+		}
+		&__linkMore {
+			top: -30px;
+			right: 30px;
+			&:before {
+				content: "Переглянути новини ";
+			} 
+		}
+	}
+	.science {
+		.section {
+			&__body {
+				padding-bottom: 30px;
+			}
+		}
+	}
+	.education {
+		&__carousel {
+			.carousel {
+				&__slide {
+					margin: 0 100px;
+					grid-template-rows: 230px 40px auto 60px;
+				}
+			}
+		}
+		&__program {
+			padding-bottom: 30px;
+		}
+	}
+	.activities {
+		&__description {
+			padding-left: 45px;
+			padding-right: 45px;
+		}
+	}
+}
+@media @tabletMiddle {
+	.science {
+		&__list {
+			column-count: 2;
+			column-gap: 60px;
+		}
+		&__button {
+			margin-top: 35px;
+		}
+	}
+	.education {
+		&__carousel {
+			padding-top: 0;
+			&--radios {
+				display: none;
+			}
+			.carousel {
+				&__slide {
+					margin: 0;
+					grid-template-rows: 230px 90px auto 70px;
+				}
+			}
+		}
+		&__program {
+			&--list {
+				width: auto;
+			}
+			&--item {
+				&.title {
+					padding: 8px 0 4px 0;
+				}
+			}
+		}
+	}
+	.activities {
+		&__background {
+			width: 55%;
+			display: block;
+			font-size: 120px;
+			border-bottom: 4em solid #062b45;
+		}
+		&__data {
+			padding: 20px 20px 0 20px;
+			position: absolute;
+			top: 0;
+		}
+		&__description {
+			padding-left: 0;
+			padding-right: 0;
+			width: 50%;
+			align-items: flex-start;
+			.tC_18 {
+				line-height: 1.3em;
+			}
+		}
+		&__companies {
+			width: 50%;
+			display: block;
+			position: relative;
+			&--logo {
+				width: 150px;
+				position: absolute;
+				&.blizzard {
+					top: 20px;
+					right: 20px;
+				}
+				&.amazon {
+					top: 80px;
+					right: 100px;
+				}
+				&.samsung {
+					top: 150px;
+					right: 10px;
+				}
+				&.twitter {
+					top: 230px;
+					right: 150px;
+				}
+				&.lg {
+					top: 280px;
+					right: 20px;
+				}
+				&.google {
+					top: 350px;
+					right: 150px;
+				}
+			}
+		}
+		&__button {
+			margin-top: 20px;
+			margin-left: 30px;
+		}
+	}
+}
+@media @tabletLarge {
+	.welcome {
+		&__carousel {
+			&--radios {
+				.radioButton {
+					&:last-child {
+						display: none;
+					}
+				}
+			}
+  		.carousel {
+  			width: 640px;
+  			&__slide {
+  				.imageItem {
+						height: auto;
+						width: 300px;
+					}
+  			}
+			}
+  	}
+		&__description {
+			margin-top: 60px;
+			padding: 0 40px;
+		}
+		&__button {
+			margin-top: 55px;
+		}
+	}
+	.lastNews {
+		&__linkMore {
+			top: -40px;
+			right: 40px;
+  	}
+	}
+	.activities {
+		&__background {
+			width: 50%;
+			font-size: 125px;
+		}
+		&__data {
+			padding-top: 30px;
+		}
+		&__description {
+			.textContent_18 {
+				line-height: 1.2em;
+			}
+		}
+		&__companies {
+			&--logo {
+				&.blizzard {
+					top: 0;
+				}
+				&.amazon {
+					top: 60px;
+				}
+				&.samsung {
+					top: 130px;
+				}
+				&.twitter {
+					top: 220px;
+				}
+				&.lg {
+					top: 270px;
+				}
+				&.google {
+					top: 350px;
+					right: 150px;
+				}
+			}
+		}
+		&__button {
+			margin-left: 60px;
+			width: 150px;
+			font-size: 16px;
+		}
+	}
+}
+@media @desktop {
+	.welcome {
+		&__carousel {
+			&--radios {
+				.radioButton {
+					&:nth-last-child(3) {
+						display: none;
+					}
+				}
+			}
+  		.carousel {
+				width: 930px;
+  			&__slide {
+  				.imageItem {
+						width: 280px;
+					}
+  			}
+			}
+  	}
+	}
+	.lastNews {
+		&__linkMore {
+			top: -95px;
+  	}
+	}
+	.science {
+		&__list {
+			padding-left: 70px;
+			column-gap: 80px;
+		}
+		&__button {
+			margin-top: 45px;
+		}
+	}
+	.education {
+		&__carousel {
+			.carousel {
+				&__slide {
+					grid-template-rows: 230px 90px auto 90px;
+				}
+			}
+		}
+		&__program {
+			&--title {
+				padding: 0 10px;
+			}
+			&--list {
+				padding: 0 10px 0 50px;
+			}
+			&--item {
+				&.title {
+					margin-left: -40px;
+					padding: 10px 0 4px 0;
+				}
+			}
+		}
+	}
+	.activities {
+		&__background {
+			width: 55%;
+			font-size: 180px;
+			border-bottom: 3em solid #062b45;
+		}
+		&__data {
+			padding-top: 40px;
+		}
+		&__description {
+			padding-left: 30px;
+			padding-bottom: 35px;
+		}
+		&__companies {
+			&--logo {
+				width: 170px;
+				&.blizzard {
+					right: 20px;
+				}
+				&.amazon {
+					top: 60px;
+					right: 200px;
+				}
+				&.samsung {
+					top: 120px;
+					right: 20px;
+				}
+				&.twitter {
+					top: 200px;
+					right: 210px;
+				}
+				&.lg {
+					top: 260px;
+					right: 20px;
+				}
+				&.google {
+					top: 340px;
+					right: 210px;
+				}
+			}
+		}
+		&__button {
+			width: 170px;
+			font-size: 20px;
+		}
+	}
+}
+@media @desktopMiddle {
+	.welcome {
+		&__carousel {
+  		.carousel {
+  			width: 1080px;
+  			&__slide {
+  				.imageItem {
+						width: 300px;
+					}
+  			}
+			}
+  	}
+	}
+	.lastNews {
+		&__linkMore {
+			right: 50px;
+		}
+	}
+	.science {
+		&__list {
+			padding-right: 30px;
+		}
+	}
+	.education {
+		&__carousel {
+			.carousel {
+				width: 1160px;
+				&__slide {
+					grid-template-rows: 220px 50px auto 80px;
+				}
+			}
+		}
+		&__program {
+			&--item {
+				&.title {
+					padding: 10px 0 8px 0;
+				}
+			}
+		}
+	}
+	.activities {
+		&__background {
+			width: 60%;
+			font-size: 310px;
+			border-bottom: 1.794em solid #062b45;
+		}
+		&__description {
+			padding-left: 0;
+			width: 40%;
+		}
+		&__companies {
+			width: 60%;
+			&--logo {
+				width: 185px;
+				&.blizzard {
+					right: -10px;
+				}
+				&.amazon {
+					top: 50px;
+					right: 240px;
+				}
+				&.samsung {
+					top: 130px;
+					right: 80px;
+				}
+				&.twitter {
+					top: 260px;
+					right: 280px;
+				}
+				&.lg {
+					top: 270px;
+					right: -20px;
+				}
+				&.google {
+					top: 370px;
+					right: 140px;
+				}
+			}
+		}
+		&__button {
+			margin-top: 35px;
+			margin-left: 60px;
+			width: 178px;
+			font-size: 24px;
+		}
+	}
+}
+@media @desktopLarge {
+	.activities__background{
+		width:53%;
+	}
+}
+
+
+@import "parts/scrollbar";
+@import "about_main";

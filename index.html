@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FI</title>
+	<!--Favicon-->
+	<link rel="icon" type="image/png" sizes="64x64" href="/images/icons/favicon-64x64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+	<!--Android Chrome-->
+	<link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-chrome-192x192.png">
+	<meta name="theme-color" content="#306A90">
+	<!--Apple/Safari icon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#022a44">
+  <!--Windows tiles-->
+	<meta name="msapplication-TileColor" content="#022a44">
+	<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+	<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+	<!--Facebook metadata-->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Факультет Інформатики">
+	<meta property="og:url" content="http://fin.ukma.edu.ua/">
+	<meta property="og:image" content="http://website.com/image/icons/og-image.jpg">
+	<meta property="og:image:width" content="269">
+	<meta property="og:image:height" content="269">
+	<meta property="og:description" content="Національний Університет &laquo;Києво-Могилянська Академія&raquo;">
+	<!--jQuery-->
+	<script 
+		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous">
+	</script>
+	<!--SigmaJS-->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js">
+	</script>
+	<!--fonts-->
+	<link 
+		rel="stylesheet" 
+		href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
+		crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<!--custom imports-->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div id="root" class="root">
+		<!--header-->
+		<header class="header" id="headerContainer">
+			<div class="header__menu" id="headerMenuContainer">
+				<input class="header__toggle" type="checkbox" id="navToggle">
+				<a class="header__logo" href="#">
+					<img class="header__logo__img" src="images/fi_logo.svg" alt="logo">
+				</a>
+				<label for="navToggle" class="header__toggle--button">
+		      <i class="fas burger tC_fff"></i>
+		    </label>
+				<nav class="header__nav">
+					<a class="header__nav__link active" href="index.html">Головна</a>
+					<a class="header__nav__link" href="news.html">Новини</a>
+					<a class="header__nav__link" href="departments.html">Кафедри</a>
+					<a class="header__nav__link" href="education.html">Навчання</a>
+					<a class="header__nav__link" href="activities.html">Діяльність</a>
+					<a class="header__nav__link" href="about.html">Про нас</a>
+				</nav>
+			</div>
+			<div class="header__title tC_fff" id="headerTitleContainer">
+				<div class="header__title__text">
+					<div class="header__title__text--main">
+						<span>Факультет</span>
+						<span class="small">Інформатики</span>
+					</div>
+					<div class="header__title__text--second">
+						<span>Національного Університету</span>
+						<span>«Києво-Могилянська Академія»</span>
+					</div>
+				</div>
+			</div>
+			<div class="header__graph" id="graphContainer"></div>
+	<!--
+	"style="position: absolute; top: 0;right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(/icons/bgHeaderMain.png);
+    background-color: #022a44;
+    " id="graphContainer"
+				 -->
+
+		</header>
+		<main class="main mainPage">
+			<section class="section">
+				<section class="section__row welcome">
+					<h1 class="section__header tC_34 tC_2c4059">
+						<span>Вітаємо вас на офіційному сайті</span>
+						<span>Факультету Інформатики</span>
+					</h1>
+					<section class="section__body">
+						<div class="welcome__carousel">
+							<div class="welcome__carousel--radios" id="welcomeCarouselRadios">
+							</div>
+							<div class="carousel" id="welcomeCarousel">
+								<div class="carousel__items">
+									<div class="carousel__slide">
+										<img class="imageItem" src="images/photos/photo1.png" alt="photo1">
+									</div>
+									<div class="carousel__slide">
+										<img class="imageItem" src="images/photos/photo2.png" alt="photo2">
+									</div>
+									<div class="carousel__slide">
+										<img class="imageItem" src="images/photos/photo3.png" alt="photo3">
+									</div>
+								</div>
+							</div>
+							<div class="carousel__radioControl"></div>
+							<a id="prevWelcome" class="carousel__control--prev"></a>
+		  				<a id="nextWelcome" class="carousel__control--next"></a>
+						</div>
+						<div class="welcome__description tC_20">
+							<p class="welcome__description--paragraph">
+								Раді вітати вас но оновленому сайті Факультету Інформатики. Дізнатися останні події та  заходи у межах факультету можна у розділі <a class="welcome__description--link" href="#">«Новини»</a>. Абітурієнтів запрошуємо до розділів <a class="welcome__description--link" href="#">«Навчання»</a> та <a class="welcome__description--link" href="#">«Кафедри»</a>. Студенти та випускники можуть переглянути список стажувань та програм обміну у розділі <a class="welcome__description--link" href="#">“Діяльність”</a>.
+							</p>
+						</div>
+						<a class="welcome__button b b_bc_033f65 b_h_062b45 b_w_220" href="about.html">Про нас</a>
+					</section>
+				</section>
+				<section class="section__row lastNews">
+					<h1 class="section__header tC_34 tC_2c4059">
+						<span>Останні новини</span>
+					</h1>
+					<section class="section__body">
+						<a class="lastNews__linkMore tC_20" href="news.html">
+							<i class="fas fa-arrow-right"></i>
+						</a>
+						<article class="section__tab--item aN">
+							<div class="aN__img">
+								<img src="images/news/news1.png" alt="news1">
+							</div>
+							<div class="aN__data">
+								<h2 class="aN__data--title tC_30">
+									<a href="#">FIdo meets Microsoft</a>
+								</h2>
+								<p class="aN__data--description tC_18">Круті спеціалісти з Microsoft відвідали стіни могилянки, щоб розказати про технологіЇ, які вони використовують, і які ви точно полюбите :)</p>
+								<a href="#" class="aN__data--button b b_bc_033f65 b_h_062b45">Детальніше</a>
+							</div>
+						</article>
+						<article class="section__tab--item aN">
+							<div class="aN__img">
+								<img src="images/news/news2.png" alt="news2">
+							</div>
+							<div class="aN__data">
+								<h2 class="aN__data--title tC_30">
+									<a href="#">Imagine Academy Camps at NaUKMA</a>
+								</h2>
+								<p class="aN__data--description tC_18">Найкращі спікери чекатимуть на тебе щоп'ятниці в KMArtSpace. Приходь і дізнайся, як отримати шанс виграти $100 000 на втілення твого проекту.</p>
+								<a href="#" class="aN__data--button b b_bc_033f65 b_h_062b45">Детальніше</a>
+							</div>
+						</article>
+					</section>
+				</section>
+				<section class="section__row science">
+					<h1 class="section__header tC_34 tC_fff">
+						<span>Головні напрями наукової роботи</span>
+					</h1>
+					<section class="section__body">
+						<ul class="science__list tC_20 tC_fff">
+							<li class="science__item">Математичне моделювання соціальних і економічних процесів</li>
+							<li class="science__item">Динамічні системи</li>
+							<li class="science__item">Сучасні інформаційні технології обробки великих об’ємів даних</li>
+							<li class="science__item">Мультимедійні системи </li>
+							<li class="science__item">Методологія створення розподілених і паралельних систем</li>
+							<li class="science__item">Методи розподіленого програмування</li>
+							<li class="science__item">Сучасні методи теорії програмування</li>
+							<li class="science__item">Програмні системи підтримки електронної освіти</li>
+							<li class="science__item">Аналіз інформації в соціальних мережах на українській мові</li>
+							<li class="science__item">Інтелектуалізація веб-орієнтованих інформаційних систем</li>
+							<li class="science__item">Комп’ютерні ігри</li>
+							<li class="science__item">Функціональний аналіз</li>
+							<li class="science__item">Дискретна математика</li>
+							<li class="science__item">Теорія груп</li>
+							<li class="science__item">Криптографія</li>
+						</ul>
+						<a class="science__button b b-o_fff b_h_062b45 b_w_270" href="#">Дізнатися Більше</a>
+					</section>
+				</section>
+				<section class="section__row education">
+					<h1 class="section__header tC_34 tC_033f65">
+						<span>Навчання</span>
+					</h1>
+					<section class="section__body">
+						<div class="education__carousel">
+							<div class="education__carousel--radios" id="programsCarouselRadios">
+								<input type="radio" id="programsCarouselLink_0" name="programsCarousel" value="0">
+								<label for="programsCarouselLink_0" class="radioButton tC_24 tC_062b45">Бакалавр</label>
+								<input type="radio" id="programsCarouselLink_1" name="programsCarousel" value="1">
+								<label for="programsCarouselLink_1" class="radioButton tC_24 tC_062b45">Магістр</label>
+								<input type="radio" id="programsCarouselLink_2" name="programsCarousel" value="2">
+								<label for="programsCarouselLink_2" class="radioButton tC_24 tC_062b45">Аспірант</label>
+							</div>
+							<div class="carousel" id="programsCarousel">
+								<div class="carousel__items">
+									<div class="education__program carousel__slide">
+										<img class="education__program--img" src="images/bachelor.svg" alt="Bachelor image">
+										<h3 class="education__program--title tC_30 tC_fff">Бакалаврські програми</h3>
+										<ul class="education__program--list tC_18 tC_fff">
+											<li class="education__program--item">
+												<a href="#">Інженерія програмного забезпечення</a>
+											</li>
+											<li class="education__program--item">
+												<a href="#">Комп’ютерні науки</a>
+											</li>
+											<li class="education__program--item title">
+												<span>Галузь «Математика та статистика»</span>
+											</li>
+											<li class="education__program--item">
+												<a href="#">Прикладна математика</a>
+											</li>
+										</ul>
+										<a href="#" class="education__program--button b b-o_fff b_h_033f65">Детальніше</a>
+									</div>
+									<div class="education__program education__program--white carousel__slide">
+										<img class="education__program--img" src="images/magistr.svg" alt="Master image">
+										<h3 class="education__program--title tC_30 tC_062b45">Магістерські програми</h3>
+										<ul class="education__program--list tC_18 tC_062b45">
+											<li class="education__program--item">
+												<a href="#">Прикладна математика</a>
+											</li>
+											<li class="education__program--item">
+												<a href="#">Комп’ютерні науки</a>
+											</li>
+											<li class="education__program--item">
+												<a href="#">Системний аналіз</a>
+											</li>
+											<li class="education__program--item">
+												<a href="#">Інженерія програмного забезпечення</a>
+											</li>
+										</ul>
+										<a href="#" class="education__program--button b b_o_062b45 b_h_033f65">Детальніше</a>
+									</div>
+									<div class="education__program carousel__slide">
+										<img class="education__program--img" src="images/aspirant.svg" alt="PhD image">
+										<h3 class="education__program--title tC_30 tC_fff">Аспірантура</h3>
+										<ul class="education__program--list tC_18 tC_fff">
+											<li class="education__program--item">
+												<a href="#">Математична логіка, дискретна математика та теорія алгоритмів</a>
+											</li>
+											<li class="education__program--item">
+												<a href="#">Інформаційні технології</a>
+											</li>
+											<li class="education__program--item">
+												<a href="#">Комп’ютерні системи і компоненти</a>
+											</li>
+										</ul>
+										<a href="#" class="education__program--button b b-o_fff b_h_033f65">Детальніше</a>
+									</div>
+								</div>
+								<a id="prevProgram" class="carousel__control--prev"></a>
+			  				<a id="nextProgram" class="carousel__control--next"></a>
+							</div>
+						</div>
+					</section>
+				</section>
+				<section class="section__row activities">
+					<h1 class="section__header tC_34 tC_033f65">
+						<span>Діяльність</span>
+					</h1>
+					<section class="section__body">
+						<div class="activities__background"></div>
+						<div class="activities__data">
+							<div class="activities__description">
+								<div class="tC_18">
+									<p class="activities__description--paragraph">
+										Студенти та випускники факультету успішно проходять стажування в найбільших і найвідоміших компаніях світу й України, cеред яких:
+										<span class="newLine">
+											Google, Amazon, Blizzard, IBM Research, Twitter, Microsoft, LG, Samsung, Epam, Lifecell, Technische Universität, Darmstadt, Albacross, Kanda software, Global Logic, NetCracker, NewtonIdeas.
+										</span>
+									</p>
+									<p class="activities__description--paragraph">
+										Щороку студенти беруть участь у програмах обміну з такими університетами, як: HTWK Leipzig (Німеччина), University of Münster (Німеччина), Oxford Kings College (Великобританія), Università degli Studi di Salerno (Італія), Friedrich-Schiller-Universität (Німеччина), University of Göttingen (Німеччина), EBS Universität für, Wirtschaft und Recht (Німеччина), Madrid Institute of Advanced Studies (Іспанія), Université Paris 13 (Франція), Freie Universität Berlin (Німеччина), Technische Universität München (Німеччина), Közép-eu
+									</p>
+								</div>
+								<a class="activities__button b b_bc_033f65 b_h_062b45" href="activities.html">Детальніше</a>
+							</div>
+							<div class="activities__companies">
+								<img src="images/companies/amazon.svg" alt="" class="activities__companies--logo amazon">
+								<img src="images/companies/blizzard.svg" alt="" class="activities__companies--logo blizzard">
+								<img src="images/companies/samsung.svg" alt="" class="activities__companies--logo samsung">
+								<img src="images/companies/twitter.svg" alt="" class="activities__companies--logo twitter">
+								<img src="images/companies/lg.svg" alt="" class="activities__companies--logo lg">
+								<img src="images/companies/google.svg" alt="" class="activities__companies--logo google">
+							</div>
+						</div>
+					</section>
+				</section>
+			</section>
+		</main>
+		<!--footer-->
+		<footer class="footer">
+			<div class="footer__nav">
+				<div class="footer__nav__main">
+					<a class="navLink link" href="index.html">Головна</a>
+					<a class="navLink link hide" href="departments.html">Кафедри</a>
+					<a class="navLink link hide" href="education.html">Навчання</a>
+					<a class="navLink link" href="news.html">Новини</a>
+					<a class="navLink link" href="activities.html">Діяльність</a>
+					<a class="navLink link" href="about.html">Про нас</a>
+				</div>
+				<div class="footer__nav__department">
+					<a class="navLink link" href="departments.html">Кафедри:</a>
+					<ul class="navList">
+						<li>
+							<a class="navList__link link" href="#">Кафедра мультимедійних систем</a>
+						</li>
+						<li>
+							<a class="navList__link link" href="#">Кафедра інформатики</a>
+						</li>
+						<li>
+							<a class="navList__link link" href="#">Кафедра математики</a>
+						</li>
+						<li>
+							<a class="navList__link link" href="#">Кафедра мережних технологій</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__nav__education">
+					<a class="navLink link" href="education.html">Навчання:</a>
+					<ul class="navList">
+						<li>
+							<a class="navList__link link" href="#">Бакалаврат</a>
+						</li>
+						<li>
+							<a class="navList__link link" href="#">Магістратура</a>
+						</li>
+						<li>
+							<a class="navList__link link" href="#">Аспірантура</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__nav__contacts">
+					<div class="contact">
+						<div class="contact__icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<div class="contact__data">
+							<a class="contact__link link" href="https://goo.gl/maps/waArFP91WSK2">
+								<span>вул. Іллінська 9,&nbsp;</span>
+								<span>2 поверх КМЦ, кім. 1</span>
+							</a>
+						</div>
+					</div>
+					<div class="contact">
+						<div class="contact__icon">
+							<i class="fas fa-phone"></i>
+						</div>
+						<div class="contact__data">
+							<a class="contact__link link" href="tel:+380444256022">
+								<span>(044) 425-60-22,</span>
+							</a>
+							<a class="contact__link link" href="tel:+380444255417">
+								<span>(044) 425-54-17</span>
+							</a>
+						</div>
+					</div>
+					<div class="contact">
+						<div class="contact__icon">
+							<i class="fas fa-envelope"></i>
+						</div>
+						<div class="contact__data">
+							<a class="contact__link link" href="mailto:fin@ukma.kiev.ua">
+								<span>fin@ukma.kiev.ua</span>
+							</a>
+						</div>
+					</div>
+					<div class="contact hide">
+						<div class="contact__icon">
+							<i class="fab fa-facebook-f"></i>
+						</div>
+						<div class="contact__data">
+							<a class="contact__link link" href="https://www.facebook.com/fin.ukma/">
+								<span>facebook.com/fin.ukma</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__nav__fb">
+					<div id="fb-root"></div>
+					<div 
+						id="footerFacebookPage"
+						class="fb-page" 
+						data-href="https://www.facebook.com/fin.ukma"
+						data-small-header="true" 
+						data-adapt-container-width="false" 
+						data-hide-cover="true" 
+						data-show-facepile="true" 
+						data-width="200"
+						data-height="200">
+						<blockquote cite="https://www.facebook.com/fin.ukma" class="fb-xfbml-parse-ignore">
+							<a href="https://www.facebook.com/fin.ukma">Факультет інформатики НаУКМА</a>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<span>Faculty of Informatics,&nbsp;</span>
+				<span>Kyiv-Mohyla Academy &nbsp;&copy; 2018</span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.aXI {
+	padding: 15px 10px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-gap: 15px;
+	background-color: #f1f1f1;
+	&__title {
+		line-height: 1.6em;
+		letter-spacing: 1.5px;
+	}
+	&__deadline,
+	&__description {
+		line-height: 1.364em;
+		letter-spacing: 1.1px;
+	}
+	&__description {
+		&--link {
+			color: #022a44;
+			text-decoration: none;
+		}
+ 	}
+}
+
+@media @mobileLarge {
+	.aXI {
+		padding: 20px;
+		grid-gap: 20px;
+	}
+}
+@media @tablet {
+	.aXI {
+		grid-gap: 25px;
+	}
+}
+@media @tabletMiddle {
+	.aXI {
+		padding: 25px 20px;
+		grid-gap: 30px;
+	}
+}
+@media @tabletLarge {
+	.aXI {
+		padding: 30px 20px;
+		grid-gap: 40px;
+	}
+}
+@media @desktop {
+	.aXI {
+		padding: 35px 20px;
+		grid-gap: 50px;
+	}
+}
+@media @desktopMiddle {}
+@media @desktopLarge {}

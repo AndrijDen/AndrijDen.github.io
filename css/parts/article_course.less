@@ -1,0 +1,30 @@
+.aC {
+	display: grid;
+	grid-template-rows: 30px auto;
+	grid-gap: 10px;
+	&__title {
+		line-height: 1.6em;
+		letter-spacing: 1.5px;
+	}
+	&__description {
+		line-height: 1.5em;
+		letter-spacing: 1px;
+	}
+}
+
+
+@media @mobileLarge {}
+@media @tablet {}
+@media @tabletMiddle {
+	.aC {
+		grid-template-rows: 40px auto;
+	}
+}
+@media @tabletLarge {}
+@media @desktop {}
+@media @desktopMiddle {
+	.aC {
+		grid-template-rows: 50px auto;
+	}
+}
+@media @desktopLarge {}

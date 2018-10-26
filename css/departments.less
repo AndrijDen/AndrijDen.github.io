@@ -1,0 +1,89 @@
+@import "parts/base";
+@import "parts/components";
+@import "parts/article_teacher";
+@import "parts/article_course";
+
+#subTab1_1:checked ~ .section__tab.t,
+#subTab1_2:checked ~ .section__tab.c,
+#subTab2_1:checked ~ .section__tab.t,
+#subTab2_2:checked ~ .section__tab.c,
+#subTab3_1:checked ~ .section__tab.t,
+#subTab3_2:checked ~ .section__tab.c,
+#subTab4_1:checked ~ .section__tab.t,
+#subTab4_2:checked ~ .section__tab.c {
+	display: flex;
+}
+#subTab1_1:checked ~ .section__nav .t,
+#subTab1_2:checked ~ .section__nav .c,
+#subTab2_1:checked ~ .section__nav .t,
+#subTab2_2:checked ~ .section__nav .c,
+#subTab3_1:checked ~ .section__nav .t,
+#subTab3_2:checked ~ .section__nav .c,
+#subTab4_1:checked ~ .section__nav .t,
+#subTab4_2:checked ~ .section__nav .c {
+	border-color: #2c4059;
+}
+
+.departmentsPage {
+	margin: 0 auto;
+	max-width: 1160px;
+	.aside {
+		&__header {
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+	.section {
+		&__nav {
+			&--item {
+				text-transform: uppercase;
+				line-height: 1.71em;
+				letter-spacing: 1.4px;
+			}
+		}
+	}
+}
+
+.aside{
+	margin-left: 20px;
+	margin-top: 50px;
+	max-width: 300px;
+	line-height: 2;
+	letter-spacing: 0.9px;
+	h1{
+		padding: 15px;
+		background-color:#f5f5f5 ;
+	}
+	&__body{
+		padding: 15px;
+		margin-top: 0px;
+		padding-top: 30px;
+		background-color:#f5f5f5 ;
+	}
+	&__header{
+		margin-top: 0px;
+		text-align: center;
+	}
+	&__item{
+		&:first-line {
+			font-size: 22px;
+			line-height: 2.2;
+			letter-spacing: 1px;
+		}
+		ul li{
+			margin-left: 15px;
+		}
+	}
+
+
+}
+
+@media @mobileLarge {}
+@media @tablet {}
+@media @tabletMiddle {}
+@media @tabletLarge {}
+@media @desktop {}
+@media @desktopMiddle {}
+@media @desktopLarge {}
+
+@import "parts/scrollbar";
